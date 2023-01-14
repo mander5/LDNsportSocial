@@ -1,5 +1,6 @@
 import "./App.scss";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Landing from "./components/landing";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Landing></Landing>
       <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }

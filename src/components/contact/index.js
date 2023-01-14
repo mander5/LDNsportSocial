@@ -25,26 +25,50 @@ const Contact = () => {
       );
   };
   return (
-    <div>
-      <form ref={refForm} onSubmit={sendEmail}>
-        <ul>
-          <li className="half">
-            <input placeholder="Name" type="text" name="name" required />
-          </li>
-          <li className="half">
-            <input placeholder="Email" type="email" name="email" required />
-          </li>
-          <li>
-            <input placeholder="Phone" type="text" name="subject" required />
-          </li>
-          <li>
-            <textarea placeholder="Message" name="message" required></textarea>
-          </li>
-          <li>
-            <input type="submit" className="flat-button" value="SEND" />
-          </li>
-        </ul>
-      </form>
+    <div className="contact">
+      <div className="get-in-touch">
+        <h1 className="title">Contact Us</h1>
+        <form className="contact-form row" ref={refForm} onSubmit={sendEmail}>
+          <div className="form-field col x-100">
+            <input
+              className="input-text js-input"
+              placeholder="Name"
+              type="text"
+              name="name"
+              required
+            />
+          </div>
+          <div className="form-field col x-50">
+            <input
+              className="input-text js-input"
+              placeholder="Email"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+          <div className="form-field col x-50">
+            <input
+              className="input-text js-input"
+              placeholder="Phone"
+              type="text"
+              name="subject"
+              required
+            />
+          </div>
+          <div className="form-field col x-100">
+            <input
+              className="input-text js-input"
+              placeholder="Message"
+              name="message"
+              required
+            ></input>
+          </div>
+          <div class="form-field col x-100 align-center">
+            <input type="submit" className="submit-btn" value="Send Message" />
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

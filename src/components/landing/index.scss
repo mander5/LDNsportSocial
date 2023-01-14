@@ -1,0 +1,17 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.landing-logo {
+  width: 100%;
+  max-width: 960px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing {
+    padding-top: 30%;
+    padding-bottom: 40%;
+  }
+}

@@ -3,8 +3,8 @@ import "./index.scss";
 
 const Landing = () => {
   return (
-    <div>
-      <img src={logo} alt="logo"></img>
+    <div className="landing">
+      <img className="landing-logo" src={logo} alt="logo"></img>
     </div>
   );
 };
