@@ -1,11 +1,19 @@
-import logo from "../../assets/images/ldnsportlogo.webp";
 import "./index.scss";
+import underline from "./underline.svg";
 
 const Landing = () => {
   return (
     <div className="landing">
-      <img className="landing-logo" src={logo} alt="logo"></img>
-      <div></div>
+      <div className="landing-intro">
+        <div>
+          We aim to offer new and innovative{" "}
+          <p id="underlined">
+            opportunities{" "}
+            <img id="underline" src={underline} alt="underline-alt"></img>
+          </p>
+          to keep your brand ahead of the game
+        </div>
+      </div>
     </div>
   );
 };

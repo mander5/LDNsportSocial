@@ -1,12 +1,9 @@
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body {
+  margin: 0;
+  // For Vertical Nav Padding-left===Nav-width
+  // padding-left: 150px;
+  // For Horizontal Nav Padding-Top===Nav-height
+  padding-top: 75px;
+  // Single Page, Scroll hidden
+  overflow: hidden;
 }

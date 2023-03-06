@@ -1,14 +1,17 @@
 import "./App.scss";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
-import Landing from "./components/landing";
+
+import Gallery from "./components/Gallery";
+import Landing from "./components/Landing";
+import Navbar from "./components/Navbar";
+import NavbarMobile from "./components/NavbarMobile";
 
 function App() {
   return (
     <div className="App">
-      <Landing></Landing>
-      <Contact></Contact>
-      <Footer></Footer>
+      {/* <Navbar /> */}
+      <NavbarMobile />
+      <Landing />
+      <Gallery />
     </div>
   );
 }
