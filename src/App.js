@@ -2,7 +2,7 @@ import "./App.scss";
 
 import Gallery from "./components/Gallery";
 // import Landing from "./components/Landing";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import NavbarMobile from "./components/NavbarMobile";
 
 function App() {
