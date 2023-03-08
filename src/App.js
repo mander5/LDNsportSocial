@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import Gallery from "./components/Gallery";
-// import Landing from "./components/Landing";
+import Landing from "./components/Landing";
 // import Navbar from "./components/Navbar";
 import NavbarMobile from "./components/NavbarMobile";
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       {/* <Navbar /> */}
       <NavbarMobile />
-      {/* <Landing /> */}
+      <Landing />
       <Gallery />
     </div>
   );
