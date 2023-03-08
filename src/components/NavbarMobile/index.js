@@ -6,9 +6,9 @@ const NavbarMobile = () => {
     <div className="navigation-m">
       <img className="navigation-logo-m" src={logo} alt="logo"></img>
       <div className="navigation-links-m">
-        <a>About</a>
-        <a>Contact</a>
-        <a>Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
       </div>
     </div>
   );
