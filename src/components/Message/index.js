@@ -1,7 +1,7 @@
 import "./index.scss";
 import underline from "./underline.svg";
 
-const Landing = () => {
+const Message = () => {
   return (
     <div className="landing">
       <div className="landing-intro">
@@ -18,4 +18,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Message;
