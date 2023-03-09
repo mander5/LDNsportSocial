@@ -6,7 +6,7 @@ const Message = () => {
     <div className="landing">
       <div className="landing-intro">
         <div>
-          We aim to offer new and innovative{" "}
+          We offer new and innovative{" "}
           <p id="underlined">
             opportunities{" "}
             <img id="underline" src={underline} alt="underline-alt"></img>
