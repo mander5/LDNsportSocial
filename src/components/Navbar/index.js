@@ -6,9 +6,9 @@ const Navbar = () => {
     <div className="navigation">
       <img className="navigation-logo" src={logo} alt="logo"></img>
       <div className="navigation-links">
-        <a>About</a>
-        <a>Contact</a>
-        <a>Services</a>
+        <a href="google.com">About</a>
+        <a href="google.com">Contact</a>
+        <a href="google.com">Services</a>
       </div>
       <div className="navigation-footer">
         <div className="navigation-footer-links">
