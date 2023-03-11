@@ -5,6 +5,9 @@
 //=============================================================================
 
 .gallery-container {
+  position: relative;
+  left: 150px;
+  z-index: -1;
   margin: auto;
   width: 100%;
   line-height: 0;
@@ -31,6 +34,8 @@
 
 @media screen and (max-width: 992px) {
   .gallery-container {
+    left: 0;
+    top: 75px;
     margin: auto;
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -40,6 +45,8 @@
 
 @media screen and (max-width: 600px) {
   .gallery-container {
+    left: 0;
+    top: 75px;
     margin: auto;
     -webkit-column-count: 4;
     -moz-column-count: 4;

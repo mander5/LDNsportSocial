@@ -17,8 +17,23 @@ import image16 from "./gallery16.jpg";
 import image17 from "./gallery17.jpg";
 import image18 from "./gallery18.jpg";
 import image19 from "./gallery19.jpg";
+import image20 from "./gallery20.jpg";
+import image21 from "./gallery21.jpg";
+import image22 from "./gallery22.jpg";
+import image23 from "./gallery23.jpg";
+import image24 from "./gallery24.jpg";
+import image25 from "./gallery25.jpg";
 
-const images = {
+function shuffleObject(obj) {
+  const entries = Object.entries(obj);
+  for (let i = entries.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [entries[i], entries[j]] = [entries[j], entries[i]];
+  }
+  return Object.fromEntries(entries);
+}
+
+const imagesOrdered = {
   image1,
   image2,
   image3,
@@ -38,6 +53,14 @@ const images = {
   image17,
   image18,
   image19,
+  image20,
+  image21,
+  image22,
+  image23,
+  image24,
+  image25,
 };
+
+const images = shuffleObject(imagesOrdered);
 
 export default images;
