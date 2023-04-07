@@ -24,7 +24,7 @@ const Gallery = () => {
   return (
     <div className='app__gallery flex__center' id='gallery'>
       <div className='app__gallery-content'>
-        <h1 className='headtext__cormorant'>Photo Gallery</h1>
+        <h1 className='headtext__cormorant'>Our Work</h1>
         <p className='p__opensans' style={{ marginTop: '2rem' }}>
           Browse through our gallery see how we have helped our partners elevate
           their brand visibility and engage with their target audience at these
@@ -62,6 +62,11 @@ const Gallery = () => {
             images.gallery18,
             images.gallery19,
             images.gallery20,
+            images.gallery21,
+            images.gallery22,
+            images.gallery23,
+            images.gallery24,
+            images.gallery25,
           ].map((image, index) => (
             <div
               className='app__gallery-images_card flex__center'

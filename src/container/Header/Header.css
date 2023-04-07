@@ -1,47 +1,107 @@
-.app__header {
-  background-color: var(--color-white);
+.outer-container {
+  position: relative;
+  height: 1200px;
+  overflow: hidden;
+  margin-bottom: 4rem;
 }
 
-.app__header-h1 {
-  font-family: var(--font-base);
-  background: var(--gradient-text);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  line-height: 117px;
-  font-size: 90px;
+.inner-container {
+  height: auto;
+  overflow: hidden;
 }
 
-.app__header-img img {
-  width: 80%;
+.app__header-container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  line-height: 0;
+  -webkit-column-count: 7;
+  -webkit-column-gap: 5px;
+  -moz-column-count: 7;
+  -moz-column-gap: 5px;
+  column-count: 7;
+  column-gap: 5px;
+}
+
+.outer-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* adjust it to your needs */
+  background: url(data:image/svg+xml;base64,alotofcodehere);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0)),
+    color-stop(70%, rgba(255, 255, 255, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+  pointer-events: none; /* Make sure the pseudo-element doesn't capture mouse events */
+  z-index: 1; /* Set a higher z-index than the images to position the gradient in front */
+}
+
+.app__header-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 2000px) {
-  .app__header-h1 {
-    font-size: 180px;
-    line-height: 210px;
+  .outer-container {
+    height: 1400px;
+  }
+  .app__header-container {
+    -webkit-column-count: 7;
+    -moz-column-count: 7;
+    column-count: 7;
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .app__header-h1 {
-    font-size: 90px;
+  .outer-container {
+    height: 1000px;
+  }
+  .app__header-container {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .app__header-h1 {
-    font-size: 70px;
-    line-height: 87px;
+  .outer-container {
+    height: 900px;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .app__header-h1 {
-    font-size: 50px;
-    line-height: 70px;
+  .app__header-container {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }

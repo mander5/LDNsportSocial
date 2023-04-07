@@ -1,29 +1,33 @@
-import React from 'react';
-
-import { SubHeading } from '../../components';
-import { images } from '../../constants';
 import './Header.css';
+import { images } from '../../constants';
+import slogan from '../../assets/slogan.jpg';
+import { Message } from '../../container';
 
-const Header = () => (
-  <div className='app__header app__wrapper section__padding' id='home'>
-    <div className='app__wrapper_info'>
-      <SubHeading title='Choose Your Lane' />
-      <h1 className='app__header-h1'>LDN Sport Social</h1>
-      <p className='p__opensans' style={{ margin: '2rem 0' }}>
-        We offer innovative opportunities and deliver results that keep your
-        brand ahead of the game
-      </p>
-      <a href='#contact'>
-        <button type='button' className='custom__button'>
-          Contact Us
-        </button>
-      </a>
-    </div>
+const images1 = {};
+Object.assign(images1, images);
+delete images1.slogan;
+delete images1.LDNlogo;
+console.log(images1);
 
-    <div className='app__wrapper_img'>
-      <img src={images.slogan} alt='header_img' />
+const Header = () => {
+  return (
+    <div className='outer-container'>
+      <Message />
+      <div className='inner-container'>
+        <div className='app__header-container'>
+          {Object.entries(images1).map(([key, value], index) => (
+            <>
+              <img src={value} alt={key} key={key} />
+              {index % 2 === 1 && (
+                <img src={slogan} alt='slogan' key={key + '-slogan'} />
+              )}
+            </>
+          ))}
+          <img src={slogan} alt='slogan' />
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Header;
