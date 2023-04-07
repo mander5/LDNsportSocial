@@ -6,12 +6,12 @@ const Message = () => {
     <div className='landing'>
       <div className='landing-intro'>
         <div>
-          We offer innovative{' '}
+          We offer innovative sports advertising and sponsorship{' '}
           <p id='underlined'>
             opportunities{' '}
             <img id='underline' src={underline} alt='underline-alt'></img>
           </p>
-          and deliver results that keep your brand ahead of the game.
+          that keep your brand ahead of the game.
         </div>
       </div>
     </div>
