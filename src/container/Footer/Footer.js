@@ -42,13 +42,16 @@ const Footer = () => (
         >
           <p>Terms & Conditions</p>
         </a>
-        <p>Privacy Policy</p>
-        <p>Contact</p>
+        <a href='mailto:sam@ldnsportsocial.com'>
+          <p>Contact</p>
+        </a>
       </div>
       <div className='app__footer-links_div'>
         <h4>Get in touch</h4>
         <p>London, UK</p>
-        <p>sam@ldnsportsocial.com</p>
+        <a href='mailto:sam@ldnsportsocial.com'>
+          <p>sam@ldnsportsocial.com</p>
+        </a>
       </div>
     </div>
 
