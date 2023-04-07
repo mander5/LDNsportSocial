@@ -12,7 +12,7 @@ const Brand = () => {
         <img src={logo2} alt='logo2' />
       </div>
       <div>
-        <img src={logo3} alt='logo3' />
+        <img id='img3' src={logo3} alt='logo3' />
       </div>
       <div>
         <img src={logo4} alt='logo4' />
