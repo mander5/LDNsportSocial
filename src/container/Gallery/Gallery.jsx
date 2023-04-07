@@ -26,9 +26,8 @@ const Gallery = () => {
       <div className='app__gallery-content'>
         <h1 className='headtext__cormorant'>Our Work</h1>
         <p className='p__opensans' style={{ marginTop: '2rem' }}>
-          Browse through our gallery see how we have helped our partners elevate
-          their brand visibility and engage with their target audience at these
-          exciting sporting events.
+          See how we've strengthened our partners' brand visability at the
+          world's premier sporting events.
         </p>
         <a
           type='button'
