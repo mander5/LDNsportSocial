@@ -9,10 +9,10 @@ const Brand = () => {
         <img src={logo1} alt='logo1' />
       </div>
       <div>
-        <img src={logo2} alt='logo2' />
+        <img className='brand_images' src={logo2} alt='logo2' />
       </div>
       <div>
-        <img id='img3' src={logo3} alt='logo3' />
+        <img className='brand_images' src={logo3} alt='logo3' />
       </div>
       <div>
         <img src={logo4} alt='logo4' />
