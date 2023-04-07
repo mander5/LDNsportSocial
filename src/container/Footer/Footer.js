@@ -35,7 +35,13 @@ const Footer = () => (
       </div>
       <div className='app__footer-links_div'>
         <h4>Company</h4>
-        <p>Terms & Conditions </p>
+        <a
+          href='https://raw.githubusercontent.com/mander5/LDNsportSocial/master/src/assets/LDNSportSocialTermsAndConditions.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <p>Terms & Conditions</p>
+        </a>
         <p>Privacy Policy</p>
         <p>Contact</p>
       </div>
